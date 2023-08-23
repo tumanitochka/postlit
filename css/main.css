@@ -4,6 +4,9 @@
     --color-label: #666666;
     --color-block: #252928;
     --color-button: #50c878;
+
+    --width-max: 360px;
+    --width-min: 330px;
 }
 
 /* [light]{
@@ -11,32 +14,14 @@
     --color-dark:  rgb(255, 255, 255);
 } */
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.column {
-    flex-direction: column;
-}
-
-.gap10 {
-    display: flex;
-    gap: 10px;
-}
-
-.gap20 {
-    display: flex;
-    gap: 20px;
-}
-
-.mt20 {
-    margin-top: 20px;
-}
-
 @font-face {
     font-family: "Amaz";
     src: url(../css/font/amaz.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 html,
@@ -46,7 +31,6 @@ body {
 
 body {
     margin: auto;
-    width: 360px;
     color: var(--color-label);
 }
 
@@ -100,6 +84,46 @@ img {
     object-fit: contain;
 }
 
+/* ПАРАМЕТРЫ, ОТСТУПЫ И ПОЗИЦИОНИРОВАНИЕ */
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.g5 {
+    gap: 5px;
+}
+
+.g10 {
+    gap: 10px;
+}
+
+.g20 {
+    gap: 20px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.max {
+    width: var(--width-max);
+}
+
+.min {
+    width: var(--width-min);
+}
+
 /* HEADER */
 
 header {
@@ -108,7 +132,6 @@ header {
     align-items: center;
     background-color: var(--color-block);
     border-radius: 0 0 10px 10px;
-    width: 100%;
     height: 80px;
 }
 
@@ -142,28 +165,16 @@ footer {
 
 /* MAIN */
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.news {
-    width: 360px;
-}
-
 .label {
     display: flex;
     justify-content: space-between;
-    width: 330px;
+    width: var(--width-max);
 }
 
 .newsList {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 330px;
     height: 50px;
     margin-top: 10px;
 
@@ -173,7 +184,7 @@ main {
         cursor: pointer;
         background-color: var(--color-block);
         border-radius: 10px;
-        width: 330px;
+        width: var(--width-min);
         padding: 1em;
     }
 
@@ -223,7 +234,7 @@ main {
 
 .listing {
     margin-top: 10px;
-    width: 360px;
+    width: var(--width-max);
 }
 
 .block {
@@ -252,12 +263,6 @@ main {
     width: 20px;
     height: 20px;
     padding: 10px;
-}
-
-.blockLabel {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
 }
 
 .author {
