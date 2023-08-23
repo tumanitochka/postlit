@@ -108,12 +108,12 @@ img {
     gap: 20px;
 }
 
-.mt10 {
-    margin-top: 10px;
-}
-
 .mt20 {
     margin-top: 20px;
+}
+
+.mt30 {
+    margin-top: 30px;
 }
 
 .max {
@@ -176,7 +176,7 @@ footer {
     align-items: center;
     justify-content: center;
     height: 50px;
-    margin-top: 10px;
+    margin-top: 20px;
 
     & a {
         display: flex;
@@ -193,11 +193,11 @@ footer {
     }
 }
 
-#menu {
+.preview {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
-    width: 350px;
+    width: var(--width-max);
 }
 
 .buttonLeft,
