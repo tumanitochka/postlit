@@ -100,6 +100,8 @@ img {
     object-fit: contain;
 }
 
+/* HEADER */
+
 header {
     display: flex;
     justify-content: space-around;
@@ -108,6 +110,12 @@ header {
     border-radius: 0 0 10px 10px;
     width: 100%;
     height: 80px;
+}
+
+.menu,
+.search {
+    width: 30px;
+    height: 23px;
 }
 
 /* FOOTER */
@@ -181,12 +189,6 @@ main {
     width: 350px;
 }
 
-.menu,
-.search {
-    width: 30px;
-    height: 23px;
-}
-
 .buttonLeft,
 .buttonRight {
     width: 170px;
@@ -225,7 +227,7 @@ main {
     margin-top: 20px;
 }
 
-.lastAudio {
+.listing {
     margin-top: 10px;
     width: 360px;
 }
