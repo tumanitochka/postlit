@@ -9,23 +9,12 @@
     --width-min: 330px;
 }
 
-@media screen and (min-width: 360px) and (max-width: 480px) {
-    :root{
-        --width-max: 480px;
-        --width-min: 360px;
-    }
-}
-
-@media screen and (min-width: 480px) and (max-width: 720px) {
-    :root{
-        --width-max: 720px;
-        --width-min: 480px;
-    }
-}
-
 /* [light]{
-    --color-light: rgb(0, 0, 0);
-    --color-dark:  rgb(255, 255, 255);
+    --color-light: #f1f1f1;
+    --color-bg: #202423;
+    --color-label: #666666;
+    --color-block: #252928;
+    --color-button: #50c878;
 } */
 
 @font-face {
