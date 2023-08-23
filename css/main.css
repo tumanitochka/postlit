@@ -112,7 +112,7 @@ header {
     height: 80px;
 }
 
-.menu,
+.bar,
 .search {
     width: 30px;
     height: 23px;
@@ -166,20 +166,20 @@ main {
     width: 330px;
     height: 50px;
     margin-top: 10px;
-}
 
-.newsList a {
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    background-color: var(--color-block);
-    border-radius: 10px;
-    width: 330px;
-    padding: 1em;
-}
+    & a {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        background-color: var(--color-block);
+        border-radius: 10px;
+        width: 330px;
+        padding: 1em;
+    }
 
-.newsList a p:nth-child(1) {
-    color: var(--color-light);
+    & p:nth-child(1) {
+        color: var(--color-light);
+    }
 }
 
 #menu {
@@ -193,25 +193,23 @@ main {
 .buttonRight {
     width: 170px;
     height: 160px;
-}
 
-.buttonLeft a,
-.buttonRight a {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--color-block);
-    color: var(--color-light);
-    border-radius: 10px;
-    width: 170px;
-    height: 160px;
-}
+    & a {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--color-block);
+        color: var(--color-light);
+        border-radius: 10px;
+        width: 170px;
+        height: 160px;
+    }
 
-.buttonLeft span,
-.buttonRight span {
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    font-size: 16px;
+    & span {
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        font-size: 16px;
+    } 
 }
 
 .buttonLeft span {
@@ -223,16 +221,12 @@ main {
     letter-spacing: .2rem;
 }
 
-.preview {
-    margin-top: 20px;
-}
-
 .listing {
     margin-top: 10px;
     width: 360px;
 }
 
-.button {
+.block {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -252,7 +246,15 @@ main {
     }
 }
 
-.buttonLabel {
+.btn {
+    border: 1px solid var(--color-button);
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+}
+
+.blockLabel {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -287,12 +289,3 @@ main {
         height: 16px;
     }
 }
-
-.buttonAudio {
-    border: 1px solid var(--color-button);
-    border-radius: 10px;
-    width: 20px;
-    height: 20px;
-    padding: 10px;
-}
-
