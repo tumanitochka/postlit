@@ -110,19 +110,36 @@ header {
     height: 80px;
 }
 
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items:s;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 120px;
+    background-color: var(--color-block);
+    border-radius: 0 0 10px 10px;
+    & a {
+        text-decoration: underline;
+    
+    }
+}
+
+.footNav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* MAIN */
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
-}
-
-footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 80px;
 }
 
 .news {
