@@ -1,0 +1,280 @@
+:root{
+    --color-light: #f1f1f1;
+    --color-bg: #202423;
+    --color-label: #666666;
+    --color-block: #252928;
+    --color-button: #50c878;
+}
+
+/* [light]{
+    --color-light: rgb(0, 0, 0);
+    --color-dark:  rgb(255, 255, 255);
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.gap10 {
+    display: flex;
+    gap: 10px;
+}
+
+.gap20 {
+    display: flex;
+    gap: 20px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+@font-face {
+    font-family: "Amaz";
+    src: url(../css/font/amaz.ttf);
+}
+
+html,
+body {
+    background-color: var(--color-bg);
+}
+
+body {
+    margin: auto;
+    width: 360px;
+    color: var(--color-label);
+}
+
+.ads {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-light);
+    box-shadow: inset 0px 0px 10px 10px rgba(0,0,0,0.1);
+    margin-top: 50px;
+    border-radius: 10px;
+    width: 350px;
+    height: 50px;
+}
+
+a {
+    color: var(--color-label);
+    text-decoration: none;
+}
+
+a:hover {
+    filter: brightness(1.5);
+    transition: all 0.3s ease;
+}
+
+a:active {
+    filter: brightness(1);
+}
+
+H1 {
+    font-family: "Amaz";
+    font-size: 42px;
+    font-weight: lighter;
+    color: var(--color-light);
+    filter: brightness(0.8);
+    letter-spacing: .3rem;
+}
+
+H2 {
+    font-size: 14px;
+    filter: brightness(0.8);
+    letter-spacing: .2rem;
+} 
+
+H3 {
+    font-size: 14px;
+    color: var(--color-light);
+}
+
+img {
+    object-fit: contain;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-block);
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    height: 80px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+.news {
+    width: 360px;
+}
+
+.label {
+    display: flex;
+    justify-content: space-between;
+    width: 330px;
+}
+
+.newsList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 330px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.newsList a {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: var(--color-block);
+    border-radius: 10px;
+    width: 330px;
+    padding: 1em;
+}
+
+.newsList a p:nth-child(1) {
+    color: var(--color-light);
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 350px;
+}
+
+.menu,
+.search {
+    width: 30px;
+    height: 23px;
+}
+
+.buttonLeft,
+.buttonRight {
+    width: 170px;
+    height: 160px;
+}
+
+.buttonLeft a,
+.buttonRight a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-block);
+    color: var(--color-light);
+    border-radius: 10px;
+    width: 170px;
+    height: 160px;
+}
+
+.buttonLeft span,
+.buttonRight span {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: 16px;
+}
+
+.buttonLeft span {
+    margin-right: 30px;
+}
+
+.buttonRight span {
+    margin-left: 30px;
+    letter-spacing: .2rem;
+}
+
+.preview {
+    margin-top: 20px;
+}
+
+.lastAudio {
+    margin-top: 10px;
+    width: 360px;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--color-block);
+    border-radius: 10px;
+    padding: 10px;
+
+    &:hover .buttonAudio {
+        background-color: var(--color-button);
+        transition: all 0.5s ease;
+        filter: brightness(0.8);
+    }
+
+    &:active .buttonAudio {
+        filter: brightness(0.8);
+    }
+}
+
+.buttonLabel {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.author {
+    display: flex;
+    gap: 5px;
+    &:before {
+        content: '';
+        background-image: url(../css/img/pen.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: flex;
+        flex-direction: row;
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.executor {
+    display: flex;
+    gap: 5px;
+    &:before {
+        content: '';
+        background-image: url(../css/img/micro.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: flex;
+        flex-direction: row;
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.buttonAudio {
+    border: 1px solid var(--color-button);
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+}
+
