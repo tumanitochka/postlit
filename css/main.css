@@ -202,9 +202,6 @@ footer {
 
 .buttonLeft,
 .buttonRight {
-    width: 170px;
-    height: 160px;
-
     & a {
         display: flex;
         justify-content: space-around;
@@ -212,7 +209,7 @@ footer {
         background-color: var(--color-block);
         color: var(--color-light);
         border-radius: 10px;
-        width: 170px;
+        width: 160px;
         height: 160px;
     }
 
