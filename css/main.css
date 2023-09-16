@@ -129,6 +129,10 @@ button {
     margin-top: 120px;
 }
 
+.mt240 {
+    margin-top: 240px;
+}
+
 .max {
     width: var(--width-max);
 }
@@ -333,4 +337,12 @@ footer {
         width: 16px;
         height: 16px;
     }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: var(--width-max);
+
 }
