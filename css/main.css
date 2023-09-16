@@ -202,6 +202,8 @@ footer {
     height: 100%;
     padding: 0 110px 0 10px;
     border: 2px solid var(--color-label);
+    -webkit-border-radius: 2px solid var(--color-label);
+    -moz-border-radius: 2px solid var(--color-label);
     background-color: var(--color-bg);
     color: var(--color-light);
     font-size: 14px;
