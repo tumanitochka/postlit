@@ -344,5 +344,5 @@ form {
     flex-direction: column;
     gap: 10px;
     width: var(--width-max);
-
+    overflow: hidden;   
 }
