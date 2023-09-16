@@ -178,7 +178,6 @@ footer {
     padding: 1em;
     & a {
         text-decoration: underline;
-    
     }
 }
 
@@ -188,8 +187,6 @@ footer {
     display: flex;
     align-items: center;
     width: var(--width-max);
-    font-size: 14px;
-    
 }
 
 input[type="search"] {
@@ -202,9 +199,12 @@ input[type="search"] {
     background-color: var(--color-block);
     color: var(--color-label);
     width: 80%;
+    height: 40px;
     padding: 10px;
     font-size: 1em;
-    
+    &::placeholder {
+        color: var(--color-label);
+    }
 }
 
 #btn_search {
@@ -214,8 +214,9 @@ input[type="search"] {
     color: var(--color-block);
     border: none;
     width: 20%;
+    height: 40px;
     padding: 10px;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .label {
