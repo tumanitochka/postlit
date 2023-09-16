@@ -185,43 +185,29 @@ footer {
 /* MAIN */
 
 .search {
-    position: relative;
     display: flex;
-    width: 100%;
-}
-
-.formSearch {
-    position: relative;
-    width: inherit;
-    height: 40px;
+    align-items: center;
+    width: var(--width-max);
+    font-size: 14px;
+    border-radius: 10px;
+    border: solid 1px var(--color-label);
 }
 
 #search {
-    box-sizing: border-box;
-    width: inherit;
-    height: 100%;
-    padding: 0 110px 0 10px;
-    border: 2px solid var(--color-label);
-    -webkit-border-radius: 2px solid var(--color-label);
-    -moz-border-radius: 2px solid var(--color-label);
-    background-color: var(--color-bg);
-    color: var(--color-light);
-    font-size: 14px;
+    background-color: var(--color-block);
+    color: var(--color-label);
+    width: 80%;
+    padding: 10px;
+    
 }
 
 #btn_search {
-    color: var(--color-light);
+    border-radius: 0 10px 10px 0;
     background-color: var(--color-label);
-    position: absolute;
-    right: -2px;
-    width: auto;
-    height: 100%;
-    padding: 12px;
-    border-style: none;
-    border-radius: 12px;
-    font-size: 14px;
-    line-height: 16px;
-    
+    color: var(--color-block);
+    border: none;
+    width: 20%;
+    padding: 10px;
 }
 
 .label {
