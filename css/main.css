@@ -194,7 +194,7 @@ footer {
 
 input[type="search"] {
     -webkit-appearance: none;
-  }
+}
 
 #search {
     border: solid 1px var(--color-label);
@@ -203,7 +203,6 @@ input[type="search"] {
     color: var(--color-label);
     width: 80%;
     padding: 10px;
-    font-size: 14px;
     
 }
 
