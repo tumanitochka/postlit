@@ -190,6 +190,7 @@ footer {
     width: var(--width-max);
     font-size: 14px;
     border-radius: 10px;
+    border-radius: 10px;
 }
 
 #search {
