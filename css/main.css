@@ -205,7 +205,6 @@ footer {
     background-color: var(--color-bg);
     color: var(--color-light);
     border-right-style: none;
-    border-radius: 12px;
     caret-color: #ff4c00;
     font-size: 14px;
 }
