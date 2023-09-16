@@ -201,7 +201,9 @@ footer {
     width: inherit;
     height: 100%;
     padding: 0 110px 0 10px;
-    border: 2px solid #0a1e78;
+    border: 2px solid var(--color-label);
+    background-color: var(--color-bg);
+    color: var(--color-light);
     border-right-style: none;
     border-radius: 12px;
     caret-color: #ff4c00;
@@ -216,11 +218,11 @@ footer {
     padding: 12px;
     border-style: none;
     border-radius: 12px;
-    color: #fff;
+    color: var(--color-light);
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    background-color: #0a1e78;
+    background-color: var(--color-label);
 }
 
 .label {
