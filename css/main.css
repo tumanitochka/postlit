@@ -203,6 +203,7 @@ input[type="search"] {
     color: var(--color-label);
     width: 80%;
     padding: 10px;
+    font-size: 1em;
     
 }
 
