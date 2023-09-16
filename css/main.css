@@ -190,14 +190,12 @@ footer {
     width: var(--width-max);
     font-size: 14px;
     border-radius: 10px;
-    border-radius: 10px;
+    border: solid 1px var(--color-label);
 }
 
 #search {
-    border-radius: 10px 0 0 10px;
     background-color: var(--color-block);
     color: var(--color-label);
-    border: solid 1px var(--color-label);
     width: 80%;
     padding: 10px;
     
