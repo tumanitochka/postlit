@@ -205,7 +205,7 @@ footer {
     border-radius: 0 10px 10px 0;
     background-color: var(--color-label);
     color: var(--color-block);
-    border: solid 1px var(--color-label);
+    border: none;
     width: 20%;
     padding: 10px;
 }
