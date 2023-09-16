@@ -192,6 +192,10 @@ footer {
     
 }
 
+input[type="search"] {
+    -webkit-appearance: none;
+  }
+
 #search {
     border: solid 1px var(--color-label);
     border-radius: 10px 0 0 10px;
@@ -350,6 +354,6 @@ form {
 }
 
 #feedback {
-    border-radius: 10px;
+    border-radius: 0px;
     padding: 10px;
 }
