@@ -204,12 +204,12 @@ footer {
     border: 2px solid var(--color-label);
     background-color: var(--color-bg);
     color: var(--color-light);
-    border-right-style: none;
-    caret-color: #ff4c00;
     font-size: 14px;
 }
 
 #btn_search {
+    color: var(--color-light);
+    background-color: var(--color-label);
     position: absolute;
     right: -2px;
     width: auto;
@@ -217,11 +217,9 @@ footer {
     padding: 12px;
     border-style: none;
     border-radius: 12px;
-    color: var(--color-light);
-    font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    background-color: var(--color-label);
+    
 }
 
 .label {
