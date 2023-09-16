@@ -163,9 +163,7 @@ li {
     list-style: none;
 }
 
-.minibar,
-.search,
-.close {
+.minibar {
     width: 30px;
     height: 23px;
 }
@@ -191,6 +189,7 @@ footer {
     align-items: center;
     width: var(--width-max);
     font-size: 14px;
+    border-radius: 10px;
 }
 
 #search {
@@ -208,7 +207,7 @@ footer {
     background-color: var(--color-label);
     color: var(--color-block);
     border: solid 1px var(--color-label);
-    width: 30%;
+    width: 20%;
     padding: 10px;
 }
 
