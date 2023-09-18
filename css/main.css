@@ -192,18 +192,16 @@ footer {
     width: var(--width-max);
     font-size: 14px;
 }
-
-#search {
-    & input[type="search"] {
-        -webkit-appearance: none;
-    }
-
+input[type="search"] {
     background-color: var(--color-block);
     color: var(--color-label);
     border: solid 1px var(--color-label);
     border-radius: 10px 0 0 10px;
     -webkit-border-radius: 10px 0 0 10px;
     -moz-border-radius: 10px 0 0 10px;
+}
+
+#search {
     width: 80%;
     height: 40px;
     padding: 10px;
