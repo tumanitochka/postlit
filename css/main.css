@@ -152,6 +152,8 @@ header {
     border-radius: 0 0 10px 10px;
     height: 60px;
     width: var(--width-max);
+    position: relative;
+    z-index: 10;
 }
 
 ul {
@@ -178,6 +180,7 @@ footer {
     padding: 1em;
     & a {
         text-decoration: underline;
+    
     }
 }
 
@@ -187,36 +190,28 @@ footer {
     display: flex;
     align-items: center;
     width: var(--width-max);
-}
-
-input[type="search"] {
-    -webkit-appearance: none;
+    font-size: 14px;
+    border-radius: 10px;
+    border-radius: 10px;
 }
 
 #search {
-    border: solid 1px var(--color-label);
     border-radius: 10px 0 0 10px;
     background-color: var(--color-block);
     color: var(--color-label);
+    border: solid 1px var(--color-label);
     width: 80%;
-    height: 40px;
     padding: 10px;
-    font-size: 0.9em;
-    &::placeholder {
-        color: var(--color-label);
-    }
+    
 }
 
 #btn_search {
-    border: solid 1px var(--color-label);
     border-radius: 0 10px 10px 0;
     background-color: var(--color-label);
     color: var(--color-block);
-    border: none;
+    border: solid 1px var(--color-label);
     width: 20%;
-    height: 40px;
     padding: 10px;
-    font-size: 1em;
 }
 
 .label {
@@ -357,4 +352,99 @@ form {
 #feedback {
     border-radius: 10px;
     padding: 10px;
+}
+
+.cover {
+    margin-top: -10%;
+    width: var(--width-max);
+    height: var(--width-max);
+    object-fit: cover;
+    border-radius: 0 0 10px 10px;
+}
+
+.option {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    & a { text-transform: uppercase; }
+    & a:hover { color: var(--color-button)}
+}
+
+.pointer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.point {
+    background-color: var(--color-block);
+    border-radius: 10px;
+    padding: 10px;
+
+    & h3 {
+        text-indent: 10px;
+        font-weight: normal;
+        margin-top: -15px;
+    }
+
+    & a {
+        text-decoration: underline;
+    }
+}
+
+.authorPointer::before {
+    content: "Автор";
+    position: relative;
+    top: -20px;
+    left: 10px;
+    font-size: 14px;
+}
+
+.executorPointer:before {
+    content: "Исполнитель";
+    position: relative;
+    top: -20px;
+    left: 10px;
+    font-size: 14px;
+}
+
+.agePointer:before {
+    content: "Год издания";
+    position: relative;
+    top: -20px;
+    left: 10px;
+    font-size: 14px;
+}
+
+.designerPointer:before {
+    content: "Художник";
+    position: relative;
+    top: -20px;
+    left: 10px;
+    font-size: 14px;
+}
+
+.descriptionPointer:before {
+    content: "Описание";
+    position: relative;
+    top: -20px;
+    left: 10px;
+    font-size: 14px;
+}
+
+.seriesPointer:before {
+    content: "Серия";
+    position: relative;
+    top: -20px;
+    left: 10px;
+    font-size: 14px;
+}
+
+.cyclePointer:before {
+    content: "Цикл";
+    position: relative;
+    top: -20px;
+    left: 10px;
+    font-size: 14px;
 }
