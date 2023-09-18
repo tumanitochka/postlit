@@ -193,6 +193,7 @@ footer {
     font-size: 14px;
 }
 input[type="search"] {
+    -webkit-appearance: none;
     background-color: var(--color-block);
     color: var(--color-label);
     border: solid 1px var(--color-label);
