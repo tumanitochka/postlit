@@ -1,3 +1,9 @@
+    /* Author: Нуржанов Олег
+    URL: https://nastyle.pro/
+    Email: oleg@nastyle.pro 
+
+    Page: Стили */
+
 :root{
     --color-light: #f1f1f1;
     --color-bg: #202423;
@@ -476,4 +482,12 @@ form {
     top: -20px;
     left: 10px;
     font-size: 14px;
+}
+
+.new {
+    display: block;
+
+    & h2 {
+        letter-spacing: .1rem;
+    }
 }
