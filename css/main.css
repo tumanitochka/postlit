@@ -89,6 +89,15 @@ H3 {
     color: var(--color-light);
 }
 
+H4 {
+    font-family: "Amaz";
+    font-size: 38px;
+    font-weight: lighter;
+    color: var(--color-light);
+    filter: brightness(0.8);
+    letter-spacing: .3rem;
+}
+
 img {
     object-fit: contain;
 }
