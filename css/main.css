@@ -195,7 +195,7 @@ footer {
 
 #search {
     & input[search] {
-        border-radius: 10px 0 0 10px;
+        border-radius: none;
     }
 
     background-color: var(--color-block);
