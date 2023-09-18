@@ -197,9 +197,9 @@ footer {
     background-color: var(--color-block);
     color: var(--color-label);
     border: solid 1px var(--color-label);
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
+    border-radius: 10px 0 0 10px;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
     width: 80%;
     padding: 10px;
     
