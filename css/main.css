@@ -197,6 +197,9 @@ input[type="search"] {
     background-color: var(--color-block);
     color: var(--color-label);
     border: solid 1px var(--color-label);
+    border-radius: 10px 0 0 10px;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
 }
 
 #search {
@@ -209,7 +212,7 @@ input[type="search"] {
 
 #btn_search {
     border: solid 1px var(--color-label);
-
+    border-radius: 0 10px 10px 0;
     background-color: var(--color-label);
     color: var(--color-block);
     width: 20%;
