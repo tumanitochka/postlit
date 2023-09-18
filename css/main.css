@@ -194,6 +194,10 @@ footer {
 }
 
 #search {
+    & input[search] {
+        border-radius: 10px 0 0 10px;
+    }
+
     background-color: var(--color-block);
     color: var(--color-label);
     border: solid 1px var(--color-label);
@@ -204,6 +208,8 @@ footer {
     height: 40px;
     padding: 10px;
 }
+
+
 
 #btn_search {
     border: solid 1px var(--color-label);
