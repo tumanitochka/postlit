@@ -401,14 +401,6 @@ form {
     font-size: 14px;
 }
 
-.executorPointer:before {
-    content: "Исполнитель";
-    position: relative;
-    top: -20px;
-    left: 10px;
-    font-size: 14px;
-}
-
 .agePointer:before {
     content: "Год издания";
     position: relative;
@@ -443,6 +435,38 @@ form {
 
 .cyclePointer:before {
     content: "Цикл";
+    position: relative;
+    top: -20px;
+    left: 10px;
+    font-size: 14px;
+}
+
+.executorPointer:before {
+    content: "Исполнитель";
+    position: relative;
+    top: -20px;
+    left: 10px;
+    font-size: 14px;
+}
+
+.executorOther:before {
+    content: "В другом исполнении";
+    position: relative;
+    top: -20px;
+    left: 10px;
+    font-size: 14px;
+}
+
+.datePointer:before {
+    content: "Дата добавления";
+    position: relative;
+    top: -20px;
+    left: 10px;
+    font-size: 14px;
+}
+
+.viewPointer:before {
+    content: "Прослушано";
     position: relative;
     top: -20px;
     left: 10px;

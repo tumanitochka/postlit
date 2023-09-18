@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+    <script src="playerjs.js" type="text/javascript"></script>
 </head>
 <body class="max"> 
     <header>
@@ -20,31 +22,26 @@
             </div>
     </header>
     <main>
-        <div>
-            <img src="./css/img/cover/01.jpeg" alt="Обложка" class="cover">
-        </div>
-        <div class="option mt20">
-            <a href="#">Слушать</a> | <a href="#">Читать</a>
-        </div>
         <div class="pointer mt30">
-            <div class="point seriesPointer">
-                <h3><a href="#">S.T.A.L.K.E.R.</a></h3>
+            <div class="point executorPointer">
+                <h3>DanmaxX</h3>
             </div>
-            <div class="point cyclePointer">
-                <h3>Одиночная книга</h3>
+            <div class="point executorOther">
+                <h3><a href="#">Олег Шубин</a></h3>
             </div>
-            <div class="point authorPointer">
-                <h3>Алексей Калугин</h3>
+            <div class="point datePointer">
+                <h3>18-09-2023</h3>
             </div>
-            <div class="point designerPointer">
-                <h3>Не важно</h3>
+            <div class="point viewPointer">
+                <h3>2 354 раз</h3>
             </div>
-            <div class="point agePointer">
-                <h3>2009</h3>
-            </div>
-            <div class="point descriptionPointer">
-                <h3>Только нелепая случайность, да еще ствол чужого автомата заставили сталкера-одиночку Гупи стать проводником странной группы, нацелившейся на самый центр Чернобыльской Зоны. В сердце Зоны находился загадочный Монолит, который, по слухам, мог выполнить самое сокровенное желание того, кто до него доберется. Но для того, чтобы его достигнуть, нужна была самая малость — пройти через Ад.</h3>
-            </div>
+        </div>
+        <div class="player">
+            <div id="player"></div>
+
+            <script>
+            var player = new Playerjs({id:"player", file:"https:\/\/www.litres.ru\/audiotrial\/?art=43647276&lfrom=337494039"});
+            </script>
         </div>
     </main>
     <footer class="mt30">
