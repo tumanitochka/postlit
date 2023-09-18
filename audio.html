@@ -36,11 +36,16 @@
                 <h3>2 354 раз</h3>
             </div>
         </div>
-        <div class="player">
+        <div class="player mt30">
             <div id="player"></div>
 
             <script>
-            var player = new Playerjs({id:"player", file:"https:\/\/www.litres.ru\/audiotrial\/?art=43647276&lfrom=337494039"});
+                var player = new Playerjs({
+                id:"player",
+                file:[
+                    {"title":"Ознакомительный фрагмент","file":"https:\/\/www.litres.ru\/audiotrial\/?art=43647276&lfrom=337494039"},
+                ]
+                });
             </script>
         </div>
     </main>
