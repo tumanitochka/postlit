@@ -524,6 +524,7 @@ button.subscribe {
     flex-direction: column;
     gap: 5px;
     width: 30%;
+    overflow: hidden;
 
     & img {
         width: 100%;
