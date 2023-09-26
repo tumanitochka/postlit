@@ -525,6 +525,7 @@ button.subscribe {
     gap: 5px;
     width: 30%;
     overflow: hidden;
+    border-radius: 10px 10px 0 0;
 
     & img {
         width: 100%;
