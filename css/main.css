@@ -512,3 +512,19 @@ button.subscribe {
 .subscribe:hover {color: var(--color-light)}
 .subscribe:active {color: var(--color-label)}
 .subscribe:checked {color: var(--color-bg)}
+
+.collection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+    & img {
+        width: 100%;
+    }
+}
