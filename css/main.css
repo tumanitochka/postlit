@@ -69,7 +69,7 @@ a:active {
     filter: brightness(1);
 }
 
-H1 {
+h1 {
     font-family: "Amaz";
     font-size: 38px;
     font-weight: lighter;
@@ -78,18 +78,18 @@ H1 {
     letter-spacing: .3rem;
 }
 
-H2 {
+h2 {
     font-size: 14px;
     filter: brightness(0.8);
     letter-spacing: .2rem;
 } 
 
-H3 {
+h3 {
     font-size: 14px;
     color: var(--color-light);
 }
 
-H4 {
+h4 {
     font-family: "Amaz";
     font-size: 38px;
     font-weight: lighter;
