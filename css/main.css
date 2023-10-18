@@ -205,6 +205,10 @@ footer {
 
 /* MAIN */
 
+main {
+    height: calc(100% - 221px);
+}
+
 .search {
     display: flex;
     align-items: center;
