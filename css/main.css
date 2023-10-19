@@ -538,8 +538,9 @@ button.subscribe {
     }
 }
 
-.ml70minus {
+.show-artist {
     margin-left: -70px;
+    text-decoration: underline;
 }
 
 .play {
@@ -599,4 +600,17 @@ button.subscribe {
 .jcsb {
     display: flex;
     justify-content: space-between;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+}
+label{
+    cursor: pointer;
+}
+div.show{
+    display: none;
+}
+input:checked ~ div.show{
+    display: block;
 }

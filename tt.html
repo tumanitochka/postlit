@@ -14,24 +14,46 @@
         label{
             cursor: pointer;
         }
-        div.p{
-            max-height:0px;
-            overflow: hidden;
+        div.show{
+            display: none;
         }
-        input:checked ~ h1 ~ div.p{
-            max-height:100px;
+        input:checked ~ div.show{
+            display: block;
         }
     </style>
 </head>
 <body>
-    
-    <div class="c">
+    <br><br><br>
+    <div class="point executorPointer">
         <input type="checkbox" id="faq-1">
-        <h1><label for="faq-1">What Is This ?</label></h1>
+        <label for="faq-1">Олег Шубин</label>
+        <div class="show">
+            <div class="play mt20">
+                <img src="./css/img/back15.png" class="cursor">
+                <img src="./css/img/play.svg" class="cursor">
+                <img src="./css/img/next15.png" class="cursor">
+            </div>
+            <div class="mt20">
+                <div class="jcsb">
+                    <span>00:00</span>
+                    <span>23:56</span>
+                </div>
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+    <!-- <div class="c">
+        <input type="checkbox" id="faq-1">
+        <h1><label for="faq-1">What Is This?</label></h1>
         <div class="p">
           <p>This a very very simple accordion.</p>
         </div>
       </div>
-    
+     -->
 </body>
 </html>
