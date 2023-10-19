@@ -8,52 +8,22 @@
     <title>Document</title>
 
     <style>
-        input[type="checkbox"] {
-            appearance: none;
+        audio {
+            fill: red;
         }
-        label{
-            cursor: pointer;
-        }
-        div.show{
-            display: none;
-        }
-        input:checked ~ div.show{
-            display: block;
+
+        audio::-webkit-media-controls-panel {
+            color: aqua;
+            background-color: aqua;
         }
     </style>
 </head>
 <body>
-    <br><br><br>
-    <div class="point executorPointer">
-        <input type="checkbox" id="faq-1">
-        <label for="faq-1">Олег Шубин</label>
-        <div class="show">
-            <div class="play mt20">
-                <img src="./css/img/back15.png" class="cursor">
-                <img src="./css/img/play.svg" class="cursor">
-                <img src="./css/img/next15.png" class="cursor">
-            </div>
-            <div class="mt20">
-                <div class="jcsb">
-                    <span>00:00</span>
-                    <span>23:56</span>
-                </div>
-                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-            </div>
-        </div>
-    </div>
 
-
-
-
-    
-    <!-- <div class="c">
-        <input type="checkbox" id="faq-1">
-        <h1><label for="faq-1">What Is This?</label></h1>
-        <div class="p">
-          <p>This a very very simple accordion.</p>
-        </div>
-      </div>
-     -->
+    <br><br><br><br>
+    <audio controls>
+        <source src="https://s12.knigavuhe.org//2//audio//45902//01-kurrikuljum-viteh-professora-persikova.mp3" />
+        <a href="https://s12.knigavuhe.org//2//audio//45902//01-kurrikuljum-viteh-professora-persikova.mp3"> Download audio </a>
+      </audio>
 </body>
 </html>
